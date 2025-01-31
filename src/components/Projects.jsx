@@ -21,7 +21,7 @@ const projects = [
     id: 2,
     name: "E's Electronics",
     role: "Full Stack Developer",
-    link: "https://yourwebsite.com",
+    link: "https://github.com/ryanporper/ecommerce",
     image: ecom,
     description:
       "A fully responsive modern ecommerce website with full cart functionality and checkout.",
@@ -33,7 +33,7 @@ const projects = [
     id: 3,
     name: "SoShow",
     role: "Full Stack Developer",
-    link: "https://github.com",
+    link: "https://github.com/ryanporper/socialsite",
     image: soshow,
     description: "A social media website for sharing posts and images.",
     details: `
@@ -50,7 +50,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="border hover:border-blue-400 rounded-lg shadow-lg p-5 w-80 hover:bg-[#242424] hover:shadow-xl transition"
+            className="border hover:border-purple-800 rounded-lg shadow-lg p-5 w-80 bg-[#131313] hover:bg-[#242424] transition"
           >
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <img
@@ -70,7 +70,7 @@ const Projects = () => {
         href="https://github.com/ryanporper"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-lg font-bold underline hover:text-blue-400"
+        className="text-lg font-bold underline hover:text-purple-800"
       >
         More Projects
       </a>

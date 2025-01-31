@@ -18,19 +18,19 @@ const Navbar = () => {
       <div className="hidden md:flex gap-6">
         <button
           onClick={() => scrollToSection("home")}
-          className="font-semibold text-white hover:text-blue-500 cursor-pointer"
+          className="font-semibold text-white hover:text-purple-800 cursor-pointer"
         >
           Home
         </button>
         <button
           onClick={() => scrollToSection("projects")}
-          className="font-semibold text-white hover:text-blue-500 cursor-pointer"
+          className="font-semibold text-white hover:text-purple-800 cursor-pointer"
         >
           Projects
         </button>
         <button
           onClick={() => scrollToSection("work")}
-          className="font-semibold text-white hover:text-blue-500 cursor-pointer"
+          className="font-semibold text-white hover:text-purple-800 cursor-pointer"
         >
           Experience
         </button>
@@ -42,7 +42,7 @@ const Navbar = () => {
           href="https://github.com/ryanporper"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-500 cursor-pointer text-white hover:scale-90"
+          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
         >
           <FaGithub size={24} />
         </a>
@@ -50,13 +50,13 @@ const Navbar = () => {
           href="https://www.linkedin.com/in/ryan-porper/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-500 cursor-pointer text-white hover:scale-90"
+          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
         >
           <FaLinkedin size={24} />
         </a>
         <a
           href="mailto:ryan_porper@aol.com?subject=Contact%20Inquiry"
-          className="hover:text-blue-500 cursor-pointer text-white hover:scale-90"
+          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
         >
           <IoMdMail size={24} />
         </a>

@@ -1,13 +1,13 @@
 const Work = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-10 px-6 md:px-20">
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
       {/* Experience Section */}
       <div className="flex flex-col gap-10 w-full">
         <h2 className="text-3xl font-bold text-center md:text-left">
           Professional Experience
         </h2>
         <div className="w-full max-w-3xl space-y-6">
-          <div className="border-l-4 border-blue-500 pl-4">
+          <div className="border-l-4 border-purple-800 pl-4 bg-[#131313]">
             <h3 className="text-xl font-semibold">Frontend Developer</h3>
             <p className="">Premier Products | Remote | 2023-2024</p>
             <ul className="list-disc list-inside mt-2 space-y-1 ">
@@ -22,7 +22,7 @@ const Work = () => {
             </ul>
           </div>
 
-          <div className="border-l-4 border-blue-500 pl-4">
+          <div className="border-l-4 border-purple-800 pl-4 bg-[#131313]">
             <h3 className="text-xl font-semibold">Customer Service Clerk</h3>
             <p className="">Publix | Coconut Creek, FL | 2016-2019</p>
             <ul className="list-disc list-inside mt-2 space-y-1 ">
@@ -41,7 +41,7 @@ const Work = () => {
           Education
         </h2>
         <div className="w-full max-w-3xl space-y-6">
-          <div className="border-l-4 border-green-500 pl-4">
+          <div className="border-l-4 border-purple-800 pl-4 bg-[#131313]">
             <h3 className="text-xl font-semibold">Coding Dojo</h3>
             <p className="">Full-Stack Developer Certificate | Online | 2022</p>
             <ul className="list-disc list-inside mt-2 space-y-1">
@@ -59,7 +59,7 @@ const Work = () => {
             </ul>
           </div>
 
-          <div className="border-l-4 border-green-500 pl-4">
+          <div className="border-l-4 border-purple-800 pl-4 bg-[#131313]">
             <h3 className="text-xl font-semibold">Palm Beach State College</h3>
             <p className="">Computer Science | Boca Raton, FL | 2017-2019</p>
             <ul className="list-disc list-inside mt-2 space-y-1">
