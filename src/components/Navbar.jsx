@@ -64,7 +64,7 @@ const Navbar = () => {
           <IoMdMail size={24} />
         </a>
         <a
-          href="/resume.pdf"
+          href={`${import.meta.env.BASE_URL}resume.pdf`}
           download
           title="Resume"
           className="hover:text-purple-800 cursor-pointer text-white hover:scale-90 font-semibold text-base"
