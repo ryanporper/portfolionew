@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import { IoMdMail, IoIosPaper } from "react-icons/io";
 
 const Navbar = () => {
   const scrollToSection = (id) => {
@@ -42,6 +42,7 @@ const Navbar = () => {
           href="https://github.com/ryanporper"
           target="_blank"
           rel="noopener noreferrer"
+          title="Github"
           className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
         >
           <FaGithub size={24} />
@@ -50,15 +51,25 @@ const Navbar = () => {
           href="https://www.linkedin.com/in/ryan-porper/"
           target="_blank"
           rel="noopener noreferrer"
+          title="LinkedIn"
           className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
         >
           <FaLinkedin size={24} />
         </a>
         <a
           href="mailto:ryan_porper@aol.com?subject=Contact%20Inquiry"
+          title="Email"
           className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
         >
           <IoMdMail size={24} />
+        </a>
+        <a
+          href="/resume.pdf"
+          download
+          title="Resume"
+          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90 font-semibold text-base"
+        >
+          <IoIosPaper size={24} />
         </a>
       </div>
     </nav>
