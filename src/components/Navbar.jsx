@@ -11,12 +11,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 border-b border-white/10 shadow-md px-6 md:px-20 lg:px-40 py-4 flex items-center justify-between text-base">
-      {/* Left Side - Name */}
       <div className="font-bold text-purple-500 text-xl tracking-tight">
         Ryan Porper
       </div>
 
-      {/* Center - Navigation */}
       <div className="hidden md:flex gap-6">
         {["home", "projects", "work"].map((section) => (
           <button
@@ -29,7 +27,6 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* Right Side - Social Links */}
       <div className="flex gap-4 items-center">
         <a
           href="https://github.com/ryanporper"
