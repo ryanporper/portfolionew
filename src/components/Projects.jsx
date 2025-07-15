@@ -45,12 +45,12 @@ const projects = [
 const Projects = () => {
   return (
     <div className="flex flex-col items-center gap-10">
-      <div className="text-3xl font-bold">Projects</div>
+      <div className="text-3xl font-bold text-purple-600">Projects</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="border hover:border-purple-800 rounded-lg shadow-lg p-5 w-80 bg-[#131313] hover:bg-[#242424] transition"
+            className="border hover:border-purple-800 rounded-lg shadow-lg p-5 w-80 hover:bg-[#242424] transition"
           >
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <img
@@ -58,7 +58,9 @@ const Projects = () => {
                 alt={project.name}
                 className="w-full h-40 object-cover rounded-md"
               />
-              <h3 className="text-xl font-semibold mt-4">{project.name}</h3>
+              <h3 className="text-xl font-semibold mt-4 text-purple-300">
+                {project.name}
+              </h3>
               <p className="">{project.role}</p>
               <p className="text-sm mt-2">{project.description}</p>
               <p className="mt-3 text-sm">{project.details}</p>
@@ -70,7 +72,7 @@ const Projects = () => {
         href="https://github.com/ryanporper"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-lg font-bold underline hover:text-purple-800"
+        className="text-lg font-bold underline hover:text-purple-300"
       >
         More Projects
       </a>

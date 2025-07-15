@@ -18,6 +18,21 @@
       rgba(255, 255, 255, 0.05) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(135deg, #110722, #4b4b4b, #ffffff);
+  background-size: 40px 40px, 40px 40px, 600% 600%;
+  background-blend-mode: overlay;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0 0, 0 0, 0% 50%;
+  }
+  50% {
+    background-position: 0 0, 0 0, 100% 50%;
+  }
+  100% {
+    background-position: 0 0, 0 0, 0% 50%;
+  }
 }

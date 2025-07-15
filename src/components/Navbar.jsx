@@ -10,66 +10,55 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#131313] py-4 px-6 md:px-20 lg:px-40 flex items-center justify-between z-50 text-xl">
+    <nav className="fixed top-0 left-0 w-full z-50 border-b border-white/10 shadow-md px-6 md:px-20 lg:px-40 py-4 flex items-center justify-between text-base">
       {/* Left Side - Name */}
-      <div className="font-bold text-white text-lg">Ryan Porper</div>
-
-      {/* Center - Navigation (Hidden on mobile) */}
-      <div className="hidden md:flex gap-6">
-        <button
-          onClick={() => scrollToSection("home")}
-          className="font-semibold text-white hover:text-purple-800 cursor-pointer"
-        >
-          Home
-        </button>
-        <button
-          onClick={() => scrollToSection("projects")}
-          className="font-semibold text-white hover:text-purple-800 cursor-pointer"
-        >
-          Projects
-        </button>
-        <button
-          onClick={() => scrollToSection("work")}
-          className="font-semibold text-white hover:text-purple-800 cursor-pointer"
-        >
-          Experience
-        </button>
+      <div className="font-bold text-purple-500 text-xl tracking-tight">
+        Ryan Porper
       </div>
 
-      {/* Right Side - Social Links (Always Visible) */}
+      {/* Center - Navigation */}
+      <div className="hidden md:flex gap-6">
+        {["home", "projects", "work"].map((section) => (
+          <button
+            key={section}
+            onClick={() => scrollToSection(section)}
+            className="text-white font-medium hover:text-purple-500 transition-colors duration-200 cursor-pointer"
+          >
+            {section.charAt(0).toUpperCase() + section.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      {/* Right Side - Social Links */}
       <div className="flex gap-4 items-center">
         <a
           href="https://github.com/ryanporper"
           target="_blank"
           rel="noopener noreferrer"
-          title="Github"
-          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
+          className="text-white hover:text-purple-500 hover:scale-105 transition-transform duration-200"
         >
-          <FaGithub size={24} />
+          <FaGithub size={22} />
         </a>
         <a
           href="https://www.linkedin.com/in/ryan-porper/"
           target="_blank"
           rel="noopener noreferrer"
-          title="LinkedIn"
-          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
+          className="text-white hover:text-purple-500 hover:scale-105 transition-transform duration-200"
         >
-          <FaLinkedin size={24} />
+          <FaLinkedin size={22} />
         </a>
         <a
           href="mailto:ryan_porper@aol.com?subject=Contact%20Inquiry"
-          title="Email"
-          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90"
+          className="text-white hover:text-purple-500 hover:scale-105 transition-transform duration-200"
         >
-          <IoMdMail size={24} />
+          <IoMdMail size={22} />
         </a>
         <a
           href={`${import.meta.env.BASE_URL}resume.pdf`}
           download
-          title="Resume"
-          className="hover:text-purple-800 cursor-pointer text-white hover:scale-90 font-semibold text-base"
+          className="text-white hover:text-purple-500 hover:scale-105 transition-transform duration-200"
         >
-          <IoIosPaper size={24} />
+          <IoIosPaper size={22} />
         </a>
       </div>
     </nav>

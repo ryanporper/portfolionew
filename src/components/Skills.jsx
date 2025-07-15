@@ -86,7 +86,9 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col gap-6 items-center">
-      <div className="text-3xl font-bold text-center">Skills</div>
+      <div className="text-3xl font-bold text-center text-purple-600">
+        Skills
+      </div>
       <div
         ref={containerRef}
         className="h-auto w-full border rounded-lg p-4 flex flex-wrap justify-center gap-6 overflow-hidden relative"
@@ -138,7 +140,9 @@ const Skills = () => {
             </div>
 
             {/* Skill Name */}
-            <p className="mt-2 text-sm text-white font-medium">{skill.name}</p>
+            <p className="mt-2 text-sm text-purple-300 font-medium">
+              {skill.name}
+            </p>
           </motion.div>
         ))}
       </div>
